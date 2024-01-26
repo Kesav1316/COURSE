@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms and Lists</title>
+    </head>
+
+    <body>
+        <h1>Forms and Lists</h1>
+
+        <form action = "POST"> <!-- POST As data is submitted to server , GET for searching as data is getting from server-->
+            <fieldset> <!-- To group into a box-->
+                <legend>Info</legend> <!-- Name of box -->
+                <label>Name</label><br> <!-- To denote the box -->
+                <input type = "text" name = "name"> <!-- The data will be stored in name while collecting-->
+                <br><br>
+    
+    
+                <label>Email</label><br>
+                <input type = "email" name = "email" required> <!-- Required to disable submit without data-->
+                <br><br>
+    
+                <label>Password</label><br>
+                <input type = "password" name = "password"> <!-- Type restricts the way of inputting-->
+                <br><br>
+
+            </fieldset>
+            <br>
+
+            <!-- Drop down box -->
+            <fieldset>
+                <legend>AdditionalInformation</legend>
+
+                <label>Location</label><br>
+                <select name = "Location">
+                    <option value = "MA">MA</option>
+                    <option value = "NY" selected>NY</option> <!-- Selected by default-->
+                    <option value = "CA">CA</option>
+                </select>
+                <br><br>
+    
+                <!-- Radio buttons(Select onlyone)-->
+                <label>Gender</label><br>
+                <input type = "radio" name = "gender" value = "Male">Male <!-- Male outside is to display -->
+                <input type = "radio" name = "gender" value = "Female" checked>Female <!-- Checked by default-->
+                <br><br>
+    
+                <!-- Checkboxes(Select multiple)-->
+                <label>Interests</label><br>
+                <input type = "checkbox" name = "interests" value = "Movies" checked >Movies <!-- Checked by default-->
+                <input type = "checkbox" name = "interests" value = "Music">Music
+                <br><br>
+                <!-- Submit -->
+                <input type = "submit" value = "Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
